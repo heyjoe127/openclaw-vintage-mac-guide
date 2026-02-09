@@ -97,33 +97,31 @@ npm --version
 
 ---
 
-## Step 3: Install pnpm
+## Step 3: Install pnpm and Claude Code
 
 ```bash
 npm install -g pnpm
 ```
 
----
-
-## Step 4: Install Claude Code
-
-[Claude Code](https://docs.anthropic.com/en/docs/claude-code) is Anthropic's official CLI tool. OpenClaw uses it under the hood.
+Now install [Claude Code](https://docs.anthropic.com/en/docs/claude-code) — Anthropic's official CLI tool. OpenClaw uses it under the hood, but it's also incredibly useful right now: **Claude Code can help you with the rest of this setup.** Seriously — if you get stuck on any step from here on, just ask it.
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-Now authenticate — run `claude` once and follow the login prompts:
+Authenticate by running `claude` once and following the login prompts:
 
 ```bash
 claude
 ```
 
-This opens a browser to log in with your Anthropic account. Once authenticated, you're good.
+This opens a browser to log in with your Anthropic account. Once authenticated, you've got an AI assistant in your terminal that can debug issues, edit configs, and guide you through the remaining steps.
+
+> **💡 Pro tip:** From this point on, if anything goes wrong — a Homebrew formula fails, a permission dialog confuses you, a config file looks wrong — just ask Claude Code. It's like having a senior engineer pair-programming with you for the rest of the install.
 
 ---
 
-## Step 5: Clone and Install OpenClaw
+## Step 4: Clone and Install OpenClaw
 
 ```bash
 git clone https://github.com/openclaw/openclaw.git
@@ -146,7 +144,7 @@ openclaw --help
 
 ---
 
-## Step 6: Set Up a Dedicated Identity
+## Step 5: Set Up a Dedicated Identity
 
 Your AI assistant will need its own accounts — GitHub, Discord bot, maybe others. Rather than tying everything to your personal email and phone number, give it a dedicated identity:
 
@@ -161,7 +159,7 @@ This keeps your personal accounts completely separate, makes 2FA straightforward
 
 ---
 
-## Step 7: Configure Your Channels
+## Step 6: Configure Your Channels
 
 OpenClaw connects to messaging platforms via channel plugins. Configuration lives in:
 
@@ -186,7 +184,7 @@ A minimal Discord config looks something like:
 
 ---
 
-## Step 8: Run the Gateway
+## Step 7: Run the Gateway
 
 Test it first in the foreground:
 

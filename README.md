@@ -146,7 +146,22 @@ openclaw --help
 
 ---
 
-## Step 6: Configure Your Channels
+## Step 6: Set Up a Dedicated Identity
+
+Your AI assistant will need its own accounts — GitHub, Discord bot, maybe others. Rather than tying everything to your personal email and phone number, give it a dedicated identity:
+
+1. **Grab a cheap old iPhone** (or any spare phone)
+2. **Get a prepaid SIM** — this gives you a real phone number for 2FA
+3. **Create a new Gmail** with that number — this becomes the AI's primary email
+4. **Use that Gmail** for all the AI's accounts: GitHub, Discord developer portal, API signups, etc.
+
+This keeps your personal accounts completely separate, makes 2FA straightforward, and means you can hand the setup to someone else without entangling your own identity.
+
+> **💡 Tip:** Label the phone and keep it plugged in near the Mac. You'll only need it occasionally for 2FA prompts.
+
+---
+
+## Step 7: Configure Your Channels
 
 OpenClaw connects to messaging platforms via channel plugins. Configuration lives in:
 
@@ -171,7 +186,7 @@ A minimal Discord config looks something like:
 
 ---
 
-## Step 7: Run the Gateway
+## Step 8: Run the Gateway
 
 Test it first in the foreground:
 
